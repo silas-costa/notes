@@ -1,48 +1,56 @@
 ﻿# IDE
-IDE (Integrated Development Enviroment) ou Ambiente de Desenvolvimento Integrado é a definição de software que ajuda os desenvolvedores a escrever código de forma eficiente. Ele combina as ferramentas de edição de código, compilador, ferramentas de testes e empacotador de software em uma ferramenta só.
-É possível usar qualquer editor de texto para escrever código, porém usar um IDE fornece ao desenvolvedor uma interface central onde o desenvolvedor pode acessar facilmente as ferramentas comuns ao desenvolvimento de código.
+## Introdução ao IDE
+Um ambiente de desenvolvimento integrado (IDE) é um suítede softwares que consolida ferramentas essenciais para escrita e testes de software. Isto inclui editores de texto, , bibliotecas de código, compiladors e plataformas de testes. Sem um IDE, os desenvolvedores precisam selecionar, implementar, integrar e gerenciar essas ferramentas separadamente.
 
-## Motivos pela qual desenvolvedores usam IDEs:
+## Objetivos da aula
+- Definir o conceito de IDEs, explicar o que é e suas funcionalidades principais.
+- Demostrar a instalação do VS Code: passo a passo da instalação do Visual Studio Code, um popular IDE.
+- Explicar a instalação e uso do Node.js e da extensão do Node.js: como instalar e utilizar o Node.js junto com o VS Code para desenvolvimento JavaScript
 
-* Automação de edição de código
-> As IDEs normalmente conhecem as regras de sintaxe da linguagem sendo usada na produção da aplicação. Por isso, as IDEs tendem a ter recursos  inteligentes para escrever ou editar o código automaticamente.
+## Recursos comuns de IDEs
+Os IDEs geralmente incluem um editor de código, um compilador ou interpretador e um depurador, acessados através de uma interface gráfica de usuário (GUI).
 
-* Realce de sintaxe
-> A grande maioria das IDEs tem a funcionalidade de mudar as cores, fonte ou realçar de qualquer outra forma palavras chaves da linguagem sendo usada na aplicação, tornando o código legível e dando feedback instantâneo sobre erros acidentais de sintaxe.
+Outros recursos comuns podem incluir:
+- **Editores programáveis**: para personalizar a escrita do código.
+- **Modelagem de objetos e dados**: Para visualizar a escrita do software.
+- **Testes de unidade: Para validar partes específicas do código.
+- **Biblioteca de código-fonte**: repositório de códigos reutilizáveis.
+- **Ferramentas de automatização de compilação**: Para automatizar tarefas repetitivas no desenvolvimento. Além disso, os IDEs costumam se integrar com sistemas de controle de versão como GitHub e Subversion.
 
-* Complementação de código inteligente
-> Enquanto se está digitando o código, a IDE pode sugerir, em tempo real, complementações automáticas do código, tentando prever o próximo item a ser digitado de todas as opções possíveis, aumentando a eficiência do processo.
+## Benefícios de Usar IDEs
 
-* Suporte para refatoração
-> Refatoração é o processo de reestruturação do código para torna-lo mais legível e eficiente sem  alterar sua funcionalidade inicial. Até certo ponto, as IDEs tem capacidade de realizar a refatoração de código de forma automática.
+Os IDEs aumentam a produtividade dos desenvolvedores ao fornecer uma configuração rápida e padronização das ferramentas. Sem um IDE, desenvolvedores gastariam tempo escolhendo e configurando ferramentas para diferentes tarefas. Um IDE unifica todas as ferramentas necessárias em uma única interface, facilitando o processo de desenvolvimento.
 
-## Automação de criação
-As IDEs aumentam a produtividade realizando as tarefas repetitivas de forma automática a cada alteração do código. Algumas dessas funções são:
+## Tipos de IDEs
 
-* Compilação
-> É o processo que transforma o código escrito pelo desenvolvedor em linguagem de máquina que assim é processada pelo sistema operacional.
+Os tipos de IDEs variam conforme a aplicação:
 
-* Testes
-> As IDEs tem ferramentas que permite a automatização de testes antes
-de o código ser implementado.
+-   **IDEs baseados na Web**: Adequados para desenvolvimento de aplicativos em HTML, JavaScript, entre outras linguagens.
+-   **IDEs baseados na Nuvem**: Utilizados para desenvolvimento que depende de recursos na nuvem.
+-   **IDEs móveis**: Para desenvolvimento de aplicativos móveis. Exemplo: O Visual Studio Code da Microsoft é uma ferramenta multiplataforma com funcionalidades robustas, como realce de sintaxe, execução de código e depuração.
 
-* Depuração
-> Esse é o processo que consiste em em corrigir os erros e bugs revelados pelos testes. Pode-se percorrer linha por linha de código a medida que ele é executado e inspecionar o comportamento do mesmo.
+## Recursos do Visual Studio Code
 
-## Tipos mais usados de IDE
-Existem muitos casos técnicos de uso e opções no mercado, tanto proprietário como open source. No geral as características mais importantes que diferenciam os IDEs são:
+O Visual Studio Code oferece uma ampla gama de recursos:
 
-* Quantidade de linguagens compatíveis
-> Algumas IDEs são dedicadas a uma linguagem específica, como por exemplo o IntelliJ que é conhecido principalmente pelo seu uso em Java. Outras IDEs suportam uma vasta gama de linguagens, como é o caso do Eclipse, que é compatível com Java, XML e Python, dentre outras.
+-   **Editor de código poderoso**: Com realce de sintaxe para várias linguagens.
+-   **Execução e depuração de código**: Diretamente no editor.
+-   **Ambiente de codificação baseado em pastas**: Facilita o trabalho com arquivos de código não organizados em projetos.
+-   **Suporte a extensões**: Para adicionar funcionalidades extras.
+-   **Recursos avançados de edição**: Como refatoração, preenchimento automático e formatação de código.
+-   **Integração com controle de versão**: Como Git, permitindo gerenciamento eficiente do código.
 
-* Sistemas operacionais compatíveis
-> O sistema operacional limita a escolha da IDE, exceto quando é uma IDE em nuvem. Se a aplicação for destinada a ser usada num sistema operacional específico, cria-se outra limitação.
+## Atividade Prática
 
-* Funcionalidades  de automação
-> A maioria das IDEs inclui um editor de código, automação de compilação e debbuger. Alguns podem incluir funcionalidades adicionais como refatoração de código, pesquisa e ferramentas de compilação contínua (CI/CD).
+A atividade prática proposta envolve a criação de um programa usando Node.js que solicita ao usuário que digite seu nome completo e, em seguida, imprime o nome no console. Passos incluem:
 
-* Impacto no desempenho do sistema
-> Pode ser importante considerar o volume de memória que a IDE consome se o desenvolvedor quiser executar aplicações simultaneamente outras aplicações que demandem muito processamento.
+1.  **Instalação do módulo `readline-sync`**: Para interação no terminal.
+2.  **Importação do módulo**: No início do programa.
+3.  **Solicitação do nome e sobrenome**: Armazenando os inputs em variáveis.
+4.  **Concatenação dos inputs**: Para formar o nome completo.
+5.  **Impressão do nome completo**: No console.
 
-* Plug-ins e extensões
-> Em algumas IDEs, é possível personalizar os fluxos de trabalho para adapta-los às necessidades e preferências do desenvolvedor.
+## Referências Bibliográficas
+
+-   **"JavaScript: O Guia Definitivo"** de David Flanagan: Livro abrangente sobre JavaScript.
+-   **"Use a cabeça!: programação HTML"** de Eric Freeman: Livro introdutório sobre programação HTML.
